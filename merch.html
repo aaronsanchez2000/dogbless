@@ -4,11 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Dog Bless Merch</title>
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com;
+    style-src 'self' https://cdnjs.cloudflare.com;
+    img-src 'self' data:;
+    font-src 'self' https://cdnjs.cloudflare.com;
+    connect-src 'self';
+    frame-ancestors 'none';
+  " />
+
+  <!-- Referrer Policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Permissions Policy (Feature Policy) -->
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  />
 </head>
 <body>
     <header class="site-header">
@@ -53,11 +71,11 @@
 
   <footer class="footer-container">
     <div class="full-width-divider-wrapper">
-        <hr class="hr-footer" />
-    </div>
     <p>&copy; 2025 Dog Bless. All rights reserved.</p>
+    </div>
   </footer>
 
   <script src="merch.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
