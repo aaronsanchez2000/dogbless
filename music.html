@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dog Bless Merch</title>
+  <title>Dog Bless Music</title>
+  <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" content="
+    default-src 'self';
+    script-src 'self' https://cdnjs.cloudflare.com;
+    style-src 'self' https://cdnjs.cloudflare.com;
+    img-src 'self' data:;
+    font-src 'self' https://cdnjs.cloudflare.com;
+    connect-src 'self';
+    frame-ancestors 'none';
+  " />
+
+  <!-- Referrer Policy -->
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Permissions Policy (Feature Policy) -->
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
+
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+  />
 </head>
 <body>
     <header class="site-header">
@@ -36,56 +54,10 @@
     <section class="social-section">
       <img src="images/music.png" alt="Music Section" class="subpage-title-img" id="social-sub-img"/>
       <div class="music-grid-container">
-        <div class="music-grid">
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-          <figure class="music-album">
-            <img src="images/LUCIDITY ART.png" alt="Lucidity Album Cover">
-            <figcaption>Lucidity</figcaption>
-          </figure>
-        </div>
+          <div class="music-grid" id="music-grid-container">
+              <!-- JS will populate albums here -->
+               
+          </div>
       </div>
     </section>
     <section class="social-section" id="social-bottom">
@@ -117,11 +89,11 @@
 
   <footer class="footer-container">
     <div class="full-width-divider-wrapper">
-        <hr class="hr-footer" />
     </div>
     <p>&copy; 2025 Dog Bless. All rights reserved.</p>
   </footer>
 
+  <script src="music-grid.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
