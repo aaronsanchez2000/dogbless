@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dog Bless Music</title>
+  <title>Dog Bless - Official Site</title>
   <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
@@ -66,42 +66,82 @@
 
     </header>
 
-  <main class="social-container">
-    <section class="social-section">
-      <img src="images/music.png" alt="Music Section" class="subpage-title-img" id="social-sub-img"/>
-      <div class="music-grid-container">
-          <div class="music-grid" id="music-grid-container">
-              <!-- JS will populate albums here -->
-               
-          </div>
-      </div>
-    </section>
-    <section class="social-section" id="social-bottom">
-      <h2>Find Us Online</h2>
-      <div class="social-grid">
-        <a href="#" class="social-link" target="_blank" aria-label="Instagram">
-          <i class="fab fa-instagram fa-3x"></i>
-          <span>Instagram</span>
-        </a>
-        <a href="#" class="social-link" target="_blank" aria-label="Bandcamp">
-          <i class="fab fa-bandcamp fa-3x"></i>
-          <span>Bandcamp</span>
-        </a>
-        <a href="#" class="social-link" target="_blank" aria-label="Apple Music">
-          <i class="fab fa-apple fa-3x"></i>
-          <span>Apple Music</span>
-        </a>
-        <a href="#" class="social-link" target="_blank" aria-label="Spotify">
-          <i class="fab fa-spotify fa-3x"></i>
-          <span>Spotify</span>
-        </a>
-        <a href="#" class="social-link" target="_blank" aria-label="YouTube Music">
-          <i class="fab fa-youtube fa-3x"></i>
-          <span>YouTube Music</span>
-        </a>
-      </div>
-    </section>
-  </main>
+    <main class="home-container">
+        <!-- hidden for now-->
+        <!-- <section class="home-section" id="about">
+            <h2>About Us</h2>
+            <p>
+                Dog Bless is a band. We like Hot Mulligan, Alkaline Trio, The Wonder Years, and American Football.
+            </p>
+        </section> -->
+        <section class="home-section" id="music">
+            <!--<h2 class="home-label">Music</h2>-->
+            <img class="home-img" src="images/music.png" alt="Music Section">
+            <p>Music goes here.</p>
+            <div class="home-album-container">
+                <!-- new releases go here. maybe 4-5?-->
+                <figure class="home-album">
+                    <a href="music.html"><img class="home-album-cover" src="images/LUCIDITY ART.png" alt="Lucidity Album Cover"></a>
+                        <figcaption>Lucidity</figcaption>
+                </figure>
+                <figure class="home-album">
+                    <a href="music.html"><img class="home-album-cover" src="images/LUCIDITY ART.png" alt="Lucidity Album Cover"></a>
+                        <figcaption>Lucidity</figcaption>
+                </figure>
+                <figure class="home-album">
+                    <a href="music.html"><img class="home-album-cover" src="images/LUCIDITY ART.png" alt="Lucidity Album Cover"></a>
+                        <figcaption>Lucidity</figcaption>
+                </figure>
+                <figure class="home-album">
+                    <a href="music.html"><img class="home-album-cover" src="images/LUCIDITY ART.png" alt="Lucidity Album Cover"></a>
+                        <figcaption>Lucidity</figcaption>
+                </figure>
+                <figure class="home-album">
+                    <a href="music.html"><img class="home-album-cover" src="images/LUCIDITY ART.png" alt="Lucidity Album Cover"></a>
+                        <figcaption>Lucidity</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="home-section" id="merch">
+            <!--<h2 class="home-label">Merch</h2>-->
+            <img class="home-img" src="images/merch.png" alt="Merch Section">
+            <p>Adding merch soon.</p>
+            <div class="home-merch-container">
+                <!-- merch goes here. 4-5 again? use transprent PNGs, add pricing info, link to merch.html-->
+                <figure class="home-merch">
+                    <a href="merch.html"><img class="home-merch-pic" src="images/whiteshirt.png" alt="Merch"></a>
+                    <figcaption>White T-Shirt</figcaption>
+                </figure>
+                <figure class="home-merch">
+                    <a href="merch.html"><img class="home-merch-pic" src="images/whiteshirt.png" alt="Merch"></a>
+                    <figcaption>White T-Shirt</figcaption>
+                </figure>
+                <figure class="home-merch">
+                    <a href="merch.html"><img class="home-merch-pic" src="images/whiteshirt.png" alt="Merch"></a>
+                    <figcaption>White T-Shirt</figcaption>
+                </figure>
+                <figure class="home-merch">
+                    <a href="merch.html"><img class="home-merch-pic" src="images/whiteshirt.png" alt="Merch"></a>
+                    <figcaption>White T-Shirt</figcaption>
+                </figure>
+                <figure class="home-merch">
+                    <a href="merch.html"><img class="home-merch-pic" src="images/whiteshirt.png" alt="Merch"></a>
+                    <figcaption>White T-Shirt</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section class="home-section" id="social">
+            <!--<h2 class="home-label">Follow Us</h2>-->
+            <img class="home-img" src="images/followus.png" alt="Social Section">
+            <ul id="social-links">
+                <li><a href="https://instagram.com/dogbless" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://bandcamp.com" target="_blank" rel="noopener noreferrer">Bandcamp</a></li>
+                <li><a href="https://spotify.com" target="_blank" rel="noopener noreferrer">Spotify</a></li>
+                <li><a href="https://apple.com" target="_blank" rel="noopener noreferrer">Apple Music</a></li>
+                <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">YouTube Music</a></li>
+            </ul>
+        </section>
+    </main>
 
   <footer class="footer-container">
     <div class="full-width-divider-wrapper">
@@ -111,8 +151,6 @@
     </div>
     <p>&copy; 2025 Dog Bless. All rights reserved.</p>
   </footer>
-
-  <script src="music-grid.js"></script>
-  <script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
