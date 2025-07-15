@@ -462,6 +462,15 @@ footer {
   justify-content: space-around;
 }
 
+.footer-logo img {
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+    opacity: 0.8;
+}
+
 @media (min-width: 1441px) {
   .header-left {
     padding-right: 2rem;
@@ -764,6 +773,10 @@ footer {
 @media (max-width: 480px) {
   html {
     font-size: 13px;
+  }
+
+  .footer-logo img {
+    width: 80px;
   }
 
   .site-header {
