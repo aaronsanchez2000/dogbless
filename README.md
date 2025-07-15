@@ -1,6 +1,6 @@
 # Dog Bless - Official Site
 
-Code for the official Dog Bless website.
+Code for the official Dog Bless website.  
 Built w/:
 - HTML5
 - CSS3
@@ -9,7 +9,7 @@ Built w/:
 
 ## Live Site
 
-[https://aaronsanchez2000.github.io/dogbless/](https://aaronsanchez2000.github.io/dogbless/)
+[https://aaronsanchez2000.github.io/dogbless/](https://aaronsanchez2000.github.io/dogbless/)  
 Looking to get custom domain soon. (dogbless.band, dogbless.org, etc.?)
 
 ## About
