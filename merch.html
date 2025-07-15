@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dog Bless Merch</title>
+  <title>Dog Bless Music</title>
   <!-- Content Security Policy -->
     <meta http-equiv="Content-Security-Policy" content="
       default-src 'self';
@@ -15,7 +15,6 @@
       frame-src https://*.myshopify.com https://cdn.shopify.com https://shop.app;
       frame-ancestors 'none';
     " />
-
 
   <!-- Referrer Policy -->
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -67,22 +66,40 @@
 
     </header>
 
-  <main class="merch-container">
-    <section>
-        <!--<h2>Dog Bless Merch</h2>-->
-        <img class="subpage-title-img" src="images/merch.png" alt="Merch Section">
-        <!-- Shopify Buy Button embed -->
-        <div class="merch-wrapper">
-            <div class="merch-grid">
-                <div class="product-box" id="product-component-1752092882511"></div>
-                <div class="product-box" id="product-component-1752093176859"></div>
-                <div class="product-box" id="product-component-1752094193761"></div>
-                <div class="product-box" id="product-component-1752095338248"></div>
-                <div class="product-box" id="product-component-1752096306839"></div>
-                <!-- Add new products here-->
-            </div>
-        </div>
-
+  <main class="social-container">
+    <section class="social-section">
+      <img src="images/music.png" alt="Music Section" class="subpage-title-img" id="social-sub-img"/>
+      <div class="music-grid-container">
+          <div class="music-grid" id="music-grid-container">
+              <!-- JS will populate albums here -->
+               
+          </div>
+      </div>
+    </section>
+    <section class="social-section" id="social-bottom">
+      <h2>Find Us Online</h2>
+      <div class="social-grid">
+        <a href="#" class="social-link" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram fa-3x"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="Bandcamp">
+          <i class="fab fa-bandcamp fa-3x"></i>
+          <span>Bandcamp</span>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="Apple Music">
+          <i class="fab fa-apple fa-3x"></i>
+          <span>Apple Music</span>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="Spotify">
+          <i class="fab fa-spotify fa-3x"></i>
+          <span>Spotify</span>
+        </a>
+        <a href="#" class="social-link" target="_blank" aria-label="YouTube Music">
+          <i class="fab fa-youtube fa-3x"></i>
+          <span>YouTube Music</span>
+        </a>
+      </div>
     </section>
   </main>
 
@@ -95,7 +112,7 @@
     <p>&copy; 2025 Dog Bless. All rights reserved.</p>
   </footer>
 
-  <script src="merch.js"></script>
+  <script src="music-grid.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
